@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite2">
+	<test name = "HighLevel Test cases">	
+		
+		<!--groups>  
+			<run>   
+				
+				<include name = "Apple"></include>	
+				
+				</run>
+			</groups-->	
+		 
+		
+		<classes> 
+			 
+				<class name = "com.gowtham.testNG.AnnotationsExample"></class> 	
+				<class name = "com.gowtham.testNG.ApplePhones"></class> 			
+	 	
+		</classes>
+				
+	</test>
+	
+	<test name = "test2">
+		
+			<classes> 
+			 
+				<class name = "com.gowtham.testNG.GroupingExample"></class> 
+				<class name = "com.gowtham.testNG.ApplePhones"></class> 				
+	 	
+		</classes>
+			<groups>			
+			
+			<run>
+				<exclude name = "Motorola"></exclude>	
+					<exclude name = "Apple"> </exclude>			
+			</run>
+		</groups>
+		
+		
+	</test>
+	
+	
+</suite>
+
+ 
+	
