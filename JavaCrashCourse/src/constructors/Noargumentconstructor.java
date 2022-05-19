@@ -16,7 +16,7 @@ public class Noargumentconstructor {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Noargumentconstructor example = new Noargumentconstructor("namachivaya");
+		Noargumentconstructor example = new Noargumentconstructor();
 		System.out.println("The value for Namachivaya is now intialized via constructor to \t"+example.Namachivaya);
 		
  
