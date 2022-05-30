@@ -1,11 +1,38 @@
 package testNG;
 
 import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class GroupingExample {
 
+	
+	
+	@BeforeTest
+	public void name4() {
+		
+		System.out.println("This is before test in grouping example");
+		
+	}
+	
+	
+	
+	@BeforeClass
+	public void name5() {
+		
+		System.out.println("This is before class in grouping example=================================");
+		
+	}
+	
+	@BeforeClass
+	public void name3() {
+		
+		System.out.println("This will execute before grouping example class");
+		
+	}
+	
 	@BeforeGroups("Lenovo")
 	public  void name() {		
 	System.out.println("This is before group - Will execute each time Before lenovo Group is executed");
@@ -74,8 +101,7 @@ public class GroupingExample {
 
 
 
-
-
+ 
 
 
 

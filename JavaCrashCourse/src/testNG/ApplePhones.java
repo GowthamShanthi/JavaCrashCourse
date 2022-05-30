@@ -3,6 +3,7 @@ package testNG;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ApplePhones {
@@ -50,6 +51,19 @@ public class ApplePhones {
 	public void Apple3() {
 		
 		System.out.println("This Test Belongs to Apple3 Group");
+		
+	}
+	
+	@BeforeTest
+	public void AppleOwner() {
+		System.out.println("This is Before Test annotation");
+	}
+	
+	
+	@BeforeClass
+	public void Appleclassowner() {
+		
+		System.out.println("Thsi is before class  ");
 		
 	}
 	
